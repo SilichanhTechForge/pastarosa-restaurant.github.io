@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Pasta Rosa - Authentic Italian pasta restaurant in Budapest, located in a boutique 20-room hotel. Fresh handmade pasta and signature Italian desserts.">
+  <meta name="keywords" content="pasta, Italian restaurant, Budapest, dining, reservations">
+  <title>Pasta Rosa | Authentic Italian Pasta Restaurant in Budapest</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Pasta <span>Rosa</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav-home">Home</a>
+        <a href="about.html" data-i18n="nav-about">About Us</a>
+        <a href="menu.html" data-i18n="nav-menu">Menu</a>
+        <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+        <a href="quiz.html" data-i18n="nav-quiz">Quiz</a>
+        <a href="reservations.html" data-i18n="nav-reservations">Reservations</a>
+        <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" title="Toggle Language">EN / HU</button>
+        <button class="btn-reserve" data-i18n="btn-reserve">Reserve Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted loop playsinline poster="assets/images/1.jpeg">
+      <source src="Widelensview outside.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1 data-i18n="hero-title">Pasta Rosa</h1>
+      <p data-i18n="hero-subtitle">Authentic Italian Pasta in the Heart of Budapest</p>
+      <p data-i18n="hero-desc">Indulge in freshly made pasta crafted with passion and tradition. A culinary experience
+        located within our boutique 20-room hotel.</p>
+      <div class="hero-ctas">
+        <a href="reservations.html" class="btn btn-primary" data-i18n="btn-reserve">Reserve Now</a>
+        <a href="menu.html" class="btn btn-secondary" data-i18n="btn-menu">View Menu</a>
+        <a href="quiz.html" class="btn btn-secondary"
+          style="background: rgba(255,255,255,0.2); backdrop-filter: blur(5px);">Take Pasta Quiz 🍝</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <!-- Featured Pasta Section -->
+    <section class="featured-pasta">
+      <div class="featured-pasta-image">
+        <img src="Seafood-freshyjpg.jpg" alt="Seafood Pasta" loading="lazy">
+      </div>
+      <div class="featured-pasta-content">
+        <h2 data-i18n="featured-title">Our Signature Pasta</h2>
+        <p data-i18n="featured-desc">Every dish is handcrafted daily using the finest Italian ingredients and
+          time-honored techniques. From classic Cacio e Pepe to innovative modern creations.</p>
+        <a href="menu.html" class="btn btn-primary" data-i18n="btn-menu">View Full Menu</a>
+      </div>
+    </section>
+
+    <!-- Dessert Highlights -->
+    <section class="dessert-highlights">
+      <div class="dessert-card">
+        <img src="Pannacotta.jpg" alt="Panna Cotta">
+        <div class="dessert-info">
+          <h4 data-i18n="panna-cotta">Panna Cotta</h4>
+          <p data-i18n="panna-cotta-desc">Silky smooth Italian cream dessert with berry coulis</p>
+          <p class="price">€9.00</p>
+        </div>
+      </div>
+
+      <div class="dessert-card">
+        <img src="Souffle-dessert.jpg" alt="Soufflé">
+        <div class="dessert-info">
+          <h4 data-i18n="souffle">Soufflé</h4>
+          <p data-i18n="souffle-desc">Light and fluffy chocolate soufflé with vanilla cream</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick Info Section -->
+    <section class="quick-info-section">
+      <h2 data-i18n="nav-about">About Us</h2>
+      <p class="section-desc">Located in the heart of Budapest, Pasta Rosa offers an authentic Italian dining
+        experience.
+        Our chefs bring years of experience and passion to every dish.</p>
+      <div class="info-grid">
+        <div class="info-item">
+          <h4 data-i18n="contact-hours">Hours</h4>
+          <p>Mon-Sun: 12:00 - 22:00</p>
+        </div>
+        <div class="info-item">
+          <h4 data-i18n="contact-address">Address</h4>
+          <p>VII. Kerület, Budapest</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h4>Pasta Rosa</h4>
+        <p>Authentic Italian pasta restaurant located in a boutique 20-room hotel in Budapest.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="quiz.html" data-i18n="nav-quiz">Quiz</a></li>
+          <li><a href="reservations.html" data-i18n="nav-reservations">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>📍 VII. Kerület, Budapest, Hungary</p>
+        <p>📞 +36 1 XXX XXXX</p>
+        <p>✉️ info@pastaRosa.hu</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pasta Rosa Restaurant. All rights reserved. | Elevating Italian Cuisine in Budapest</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

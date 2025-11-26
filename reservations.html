@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Reserve your table at Pasta Rosa. Enjoy authentic Italian pasta in our intimate Budapest restaurant.">
+  <title>Reservations | Pasta Rosa Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Pasta <span>Rosa</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav-home">Home</a>
+        <a href="about.html" data-i18n="nav-about">About Us</a>
+        <a href="menu.html" data-i18n="nav-menu">Menu</a>
+        <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+        <a href="quiz.html" data-i18n="nav-quiz">Quiz</a>
+        <a href="reservations.html" data-i18n="nav-reservations">Reservations</a>
+        <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" title="Toggle Language">EN / HU</button>
+        <button class="btn-reserve" data-i18n="btn-reserve">Reserve Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <div
+    style="margin-top: 80px; background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%); color: white; padding: 60px 20px; text-align: center;">
+    <h1 style="color: white; margin: 0;" data-i18n="nav-reservations">Reservations</h1>
+    <p style="margin-top: 12px; font-size: 1.1rem; color: rgba(255,255,255,0.9);">Secure your table at Pasta Rosa and
+      experience authentic Italian dining</p>
+  </div>
+
+  <!-- Reservations Content -->
+  <div class="container">
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: start; margin-bottom: 48px;">
+      <div>
+        <div class="section-title" style="text-align: left;">
+          <h2>Make a Reservation</h2>
+          <p>Book your table online and receive confirmation instantly</p>
+        </div>
+
+        <!-- Reservation Form -->
+        <div class="booking-widget">
+          <form id="reservation-form" style="display: flex; flex-direction: column; gap: 18px;">
+            <div class="form-group">
+              <label for="res-name">Full Name *</label>
+              <input type="text" id="res-name" name="name" required placeholder="Your name">
+            </div>
+
+            <div class="form-group">
+              <label for="res-email">Email Address *</label>
+              <input type="email" id="res-email" name="email" required placeholder="your@email.com">
+            </div>
+
+            <div class="form-group">
+              <label for="res-phone">Phone Number *</label>
+              <input type="tel" id="res-phone" name="phone" required placeholder="+36 1 XXX XXXX">
+            </div>
+
+            <div class="form-group">
+              <label for="res-date">Reservation Date *</label>
+              <input type="date" id="res-date" name="date" required>
+            </div>
+
+            <div class="form-group">
+              <label for="res-time">Preferred Time *</label>
+              <select id="res-time" name="time" required
+                style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 4px; font-size: 0.95rem;">
+                <option value="">Select a time</option>
+                <option value="17:00">17:00 (5:00 PM)</option>
+                <option value="17:30">17:30 (5:30 PM)</option>
+                <option value="18:00">18:00 (6:00 PM)</option>
+                <option value="18:30">18:30 (6:30 PM)</option>
+                <option value="19:00">19:00 (7:00 PM)</option>
+                <option value="19:30">19:30 (7:30 PM)</option>
+                <option value="20:00">20:00 (8:00 PM)</option>
+                <option value="20:30">20:30 (8:30 PM)</option>
+                <option value="21:00">21:00 (9:00 PM)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="res-guests">Number of Guests *</label>
+              <select id="res-guests" name="guests" required
+                style="width: 100%; padding: 12px; border: 1px solid var(--border); border-radius: 4px; font-size: 0.95rem;">
+                <option value="">Select number</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+                <option value="3">3 Guests</option>
+                <option value="4">4 Guests</option>
+                <option value="5">5 Guests</option>
+                <option value="6">6 Guests</option>
+                <option value="7">7 Guests</option>
+                <option value="8">8+ Guests</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="res-special">Special Requests (Optional)</label>
+              <textarea id="res-special" name="special"
+                placeholder="Dietary requirements, celebration details, seating preferences..."></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary"
+              style="padding: 14px; font-size: 1rem; margin-top: 12px;">Confirm Reservation</button>
+
+            <p style="font-size: 0.85rem; color: var(--text-light); margin-top: 8px;">* Required fields. Confirmation
+              will be sent to your email address.</p>
+          </form>
+        </div>
+      </div>
+
+      <div>
+        <div class="section-title" style="text-align: left;">
+          <h2>Important Information</h2>
+        </div>
+
+        <div style="background: #f5f5f0; padding: 28px; border-radius: 8px; border-left: 4px solid var(--primary-red);">
+          <h4 style="color: var(--primary-red); margin-top: 0;">Hours & Availability</h4>
+          <p><strong>Monday - Thursday:</strong> 5:00 PM - 11:00 PM</p>
+          <p><strong>Friday - Saturday:</strong> 5:00 PM - 12:00 AM</p>
+          <p style="margin-bottom: 0;"><strong>Sunday:</strong> 5:00 PM - 10:00 PM</p>
+        </div>
+
+        <div
+          style="background: #fef9f3; padding: 28px; border-radius: 8px; border-left: 4px solid var(--accent-gold); margin-top: 16px;">
+          <h4 style="color: var(--accent-gold); margin-top: 0;">Cancellation Policy</h4>
+          <p>Reservations can be cancelled or modified free of charge up to 24 hours before the reservation time.
+            Cancellations within 24 hours may incur a charge.</p>
+        </div>
+
+        <div
+          style="background: #f0f8ff; padding: 28px; border-radius: 8px; border-left: 4px solid #2c5aa0; margin-top: 16px;">
+          <h4 style="color: #2c5aa0; margin-top: 0;">Group Reservations</h4>
+          <p>For groups of 8 or more, please contact us directly at <strong>+36 1 XXX XXXX</strong> or email
+            <strong>groups@pastaRosa.hu</strong> to arrange special seating and menu options.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- FAQ Section -->
+    <section style="background: #f5f5f0; padding: 40px; border-radius: 8px; margin-top: 40px;">
+      <h2 style="text-align: center; margin-bottom: 32px;">Frequently Asked Questions</h2>
+
+      <div style="max-width: 800px; margin: 0 auto;">
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">How far in advance should I make a reservation?
+          </summary>
+          <p style="margin-top: 12px;">We recommend booking at least 2-3 days in advance, especially for weekends.
+            However, we also accept same-day reservations based on availability.</p>
+        </details>
+
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">Do you accommodate dietary restrictions?
+          </summary>
+          <p style="margin-top: 12px;">Absolutely! We can accommodate vegetarian, vegan, and gluten-free diets. Please
+            mention your dietary requirements when making your reservation, and our team will prepare special options
+            for you.</p>
+        </details>
+
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">Can I celebrate a special occasion at Pasta
+            Rosa?</summary>
+          <p style="margin-top: 12px;">Yes! We'd love to help celebrate birthdays, anniversaries, proposals, and other
+            special moments. Please include details in the "Special Requests" field, and our team will make your
+            celebration memorable.</p>
+        </details>
+
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">What is your private dining capacity?</summary>
+          <p style="margin-top: 12px;">Our restaurant accommodates up to 60 guests. For private events or large group
+            dining, please contact our events team directly at groups@pastaRosa.hu.</p>
+        </details>
+
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">Do you have a dress code?</summary>
+          <p style="margin-top: 12px;">Smart casual dress is recommended. We want you to be comfortable, so there's no
+            strict formal requirement, but we do ask for neat and appropriate attire.</p>
+        </details>
+
+        <details
+          style="margin-bottom: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 4px; cursor: pointer;">
+          <summary style="font-weight: 600; color: var(--primary-red);">What payment methods do you accept?</summary>
+          <p style="margin-top: 12px;">We accept all major credit cards, debit cards, and cash. Digital payment options
+            are also available. Please inform us of your preferred payment method when making your reservation.</p>
+        </details>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h4>Pasta Rosa</h4>
+        <p>Authentic Italian pasta restaurant located in a boutique 20-room hotel in Budapest.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="quiz.html" data-i18n="nav-quiz">Quiz</a></li>
+          <li><a href="reservations.html" data-i18n="nav-reservations">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>📍 VII. Kerület, Budapest, Hungary</p>
+        <p>📞 +36 1 XXX XXXX</p>
+        <p>✉️ info@pastaRosa.hu</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pasta Rosa Restaurant. All rights reserved. | Elevating Italian Cuisine in Budapest</p>
+    </div>
+  </footer>
+
+  <script>
+    // Handle reservation form submission
+    document.getElementById('reservation-form').addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      const formData = {
+        name: document.getElementById('res-name').value,
+        email: document.getElementById('res-email').value,
+        phone: document.getElementById('res-phone').value,
+        date: document.getElementById('res-date').value,
+        time: document.getElementById('res-time').value,
+        guests: document.getElementById('res-guests').value,
+        special: document.getElementById('res-special').value
+      };
+
+      console.log('Reservation submitted:', formData);
+      alert('Thank you for your reservation! A confirmation has been sent to your email. We look forward to welcoming you at Pasta Rosa!');
+      document.getElementById('reservation-form').reset();
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Pasta Rosa Quiz - Test your knowledge of Italian pasta types! Fun and interactive quiz.">
+    <title>Pasta Quiz | Pasta Rosa Restaurant</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="Logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="header-inner">
+            <div class="logo">
+                Pasta <span>Rosa</span>
+            </div>
+
+            <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+                ☰
+            </button>
+
+            <nav class="main-nav">
+                <a href="index.html" data-i18n="nav-home">Home</a>
+                <a href="about.html" data-i18n="nav-about">About Us</a>
+                <a href="menu.html" data-i18n="nav-menu">Menu</a>
+                <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+                <a href="quiz.html" data-i18n="nav-quiz" class="active">Quiz</a>
+                <a href="reservations.html" data-i18n="nav-reservations">Reservations</a>
+                <a href="contact.html" data-i18n="nav-contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="lang-toggle" title="Toggle Language">EN / HU</button>
+                <button class="btn-reserve" data-i18n="btn-reserve">Reserve Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title -->
+    <div
+        style="margin-top: 80px; background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%); color: white; padding: 60px 20px; text-align: center;">
+        <h1 style="color: white; margin: 0;">Pasta Knowledge Quiz</h1>
+        <p style="margin-top: 12px; font-size: 1.1rem; color: rgba(255,255,255,0.9);">How well do you know your pasta?
+        </p>
+    </div>
+
+    <!-- Quiz Content -->
+    <div class="container">
+        <div id="quiz-container" class="quiz-container">
+            <!-- Start Screen -->
+            <div id="quiz-start" class="quiz-step active">
+                <h2>Ready to test your knowledge?</h2>
+                <p>Identify the pasta shapes correctly and become a Pasta Master!</p>
+                <button id="start-quiz-btn" class="btn btn-primary">Start Quiz</button>
+            </div>
+
+            <!-- Question Screen -->
+            <div id="quiz-question" class="quiz-step">
+                <div class="quiz-progress">Question <span id="current-question">1</span> / <span
+                        id="total-questions">5</span></div>
+                <div class="quiz-image-container">
+                    <img id="question-image" src="" alt="Pasta to identify">
+                </div>
+                <h3 id="question-text">What type of pasta is this?</h3>
+                <div id="options-container" class="quiz-options">
+                    <!-- Options will be injected here -->
+                </div>
+                <div class="quiz-controls" style="margin-top: 20px; display: flex; justify-content: space-between;">
+                    <button id="prev-btn" class="btn btn-primary" disabled>Previous</button>
+                    <button id="next-btn" class="btn btn-primary" disabled>Next</button>
+                </div>
+            </div>
+
+            <!-- Results Screen -->
+            <div id="quiz-results" class="quiz-step">
+                <h2>Quiz Completed!</h2>
+                <p>Your Score: <span id="final-score">0</span> / <span id="total-score">5</span></p>
+                <p id="result-message"></p>
+                <button id="restart-quiz-btn" class="btn btn-primary">Play Again</button>
+                <a href="menu.html" class="btn btn-secondary" style="margin-top: 16px; display: inline-block;">View Our
+                    Menu</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <div class="footer-column">
+                <h4>Pasta Rosa</h4>
+                <p>Authentic Italian pasta restaurant located in a boutique 20-room hotel in Budapest.</p>
+            </div>
+
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+                    <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+                    <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+                    <li><a href="quiz.html" data-i18n="nav-quiz">Quiz</a></li>
+                    <li><a href="reservations.html" data-i18n="nav-reservations">Reservations</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+                    <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4>Contact</h4>
+                <p>📍 VII. Kerület, Budapest, Hungary</p>
+                <p>📞 +36 1 XXX XXXX</p>
+                <p>✉️ info@pastaRosa.hu</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Pasta Rosa Restaurant. All rights reserved. | Elevating Italian Cuisine in Budapest</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Contact Pasta Rosa - Get directions, hours, phone number, and email. Visit our authentic Italian pasta restaurant in Budapest.">
+  <title>Contact & Location | Pasta Rosa Restaurant</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Logo.jpg" type="image/jpeg">
+</head>
+
+<body>
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="logo">
+        Pasta <span>Rosa</span>
+      </div>
+
+      <button class="mobile-menu-toggle" aria-label="Toggle navigation">
+        ☰
+      </button>
+
+      <nav class="main-nav">
+        <a href="index.html" data-i18n="nav-home">Home</a>
+        <a href="about.html" data-i18n="nav-about">About Us</a>
+        <a href="menu.html" data-i18n="nav-menu">Menu</a>
+        <a href="gallery.html" data-i18n="nav-gallery">Gallery</a>
+        <a href="quiz.html" data-i18n="nav-quiz">Quiz</a>
+        <a href="reservations.html" data-i18n="nav-reservations">Reservations</a>
+        <a href="contact.html" data-i18n="nav-contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-toggle" title="Toggle Language">EN / HU</button>
+        <button class="btn-reserve" data-i18n="btn-reserve">Reserve Now</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Title -->
+  <div
+    style="margin-top: 80px; background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 100%); color: white; padding: 60px 20px; text-align: center;">
+    <h1 style="color: white; margin: 0;" data-i18n="nav-contact">Contact Us</h1>
+    <p style="margin-top: 12px; font-size: 1.1rem; color: rgba(255,255,255,0.9);">We'd love to hear from you</p>
+  </div>
+
+  <!-- Contact Content -->
+  <div class="container">
+
+    <div class="contact-section" style="display: grid; grid-template-columns: 1fr 1fr; gap: 48px; margin-bottom: 60px;">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <div class="contact-info-item" style="margin-bottom: 32px;">
+          <h4 data-i18n="contact-address" style="color: var(--primary-red); margin-bottom: 8px;">Address</h4>
+          <p>VII. Kerület, Budapest, Hungary</p>
+          <p style="font-size: 0.9rem; color: #888;">(Located inside the Boutique Hotel)</p>
+        </div>
+
+        <div class="contact-info-item" style="margin-bottom: 32px;">
+          <h4 data-i18n="contact-hours" style="color: var(--primary-red); margin-bottom: 8px;">Opening Hours</h4>
+          <p><strong>Monday - Thursday:</strong> 17:00 - 23:00</p>
+          <p><strong>Friday - Saturday:</strong> 17:00 - 00:00</p>
+          <p><strong>Sunday:</strong> 17:00 - 22:00</p>
+        </div>
+
+        <div class="contact-info-item" style="margin-bottom: 32px;">
+          <h4 data-i18n="contact-phone" style="color: var(--primary-red); margin-bottom: 8px;">Phone</h4>
+          <p>+36 1 XXX XXXX</p>
+          <p style="font-size: 0.9rem; color: #888;">Reservations & General Inquiries</p>
+        </div>
+
+        <div class="contact-info-item">
+          <h4 data-i18n="contact-email" style="color: var(--primary-red); margin-bottom: 8px;">Email</h4>
+          <p>info@pastaRosa.hu</p>
+          <p>events@pastaRosa.hu (Group Bookings)</p>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="contact-form" style="background: #f9f9f9; padding: 32px; border-radius: 8px;">
+        <h3 style="margin-top: 0; margin-bottom: 24px; color: var(--primary-red);" data-i18n="contact-form">Get In
+          Touch</h3>
+        <form id="contact-form" style="display: flex; flex-direction: column; gap: 16px;">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required
+              style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 4px;">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required
+              style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 4px;">
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required
+              style="width: 100%; padding: 10px; border: 1px solid var(--border); border-radius: 4px;"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="padding: 12px;">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Map Section -->
+    <div class="map-section" style="margin-bottom: 60px;">
+      <h3 style="margin-bottom: 24px;">Find Us</h3>
+      <div style="width: 100%; height: 400px; background: #eee; border-radius: 8px; overflow: hidden;">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2695.766393276634!2d19.0656!3d47.5005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741dc66b4065609%3A0x37d4d6c06a7737!2sBudapest%2C%20VII.%20ker%C3%BClet!5e0!3m2!1sen!2shu!4v1625678901234!5m2!1sen!2shu"
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-column">
+        <h4>Pasta Rosa</h4>
+        <p>Authentic Italian pasta restaurant located in a boutique 20-room hotel in Budapest.</p>
+      </div>
+
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html" data-i18n="nav-home">Home</a></li>
+          <li><a href="menu.html" data-i18n="nav-menu">Menu</a></li>
+          <li><a href="gallery.html" data-i18n="nav-gallery">Gallery</a></li>
+          <li><a href="quiz.html" data-i18n="nav-quiz">Quiz</a></li>
+          <li><a href="reservations.html" data-i18n="nav-reservations">Reservations</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="about.html" data-i18n="nav-about">About Us</a></li>
+          <li><a href="contact.html" data-i18n="nav-contact">Contact</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <h4>Contact</h4>
+        <p>📍 VII. Kerület, Budapest, Hungary</p>
+        <p>📞 +36 1 XXX XXXX</p>
+        <p>✉️ info@pastaRosa.hu</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Pasta Rosa Restaurant. All rights reserved. | Elevating Italian Cuisine in Budapest</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
